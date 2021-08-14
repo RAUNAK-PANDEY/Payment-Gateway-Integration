@@ -1,9 +1,17 @@
  
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }  
+ 
+ 
+.bgm{
+    width: 100%; 
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
 }
-
  
 /* Navigation Bar */
 #navbar{
@@ -14,7 +22,7 @@
 
 #navbar::before{
     content: "";
-    background-color: black;
+    background-color: rgb(123, 82, 235);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -57,13 +65,6 @@
     background-color: white;
 }
 
-.bgm{
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.7;
-}
-
 /* Home Section */
 #home{
     display: flex;
@@ -77,17 +78,18 @@
 #home::before{
     content: "";
     position: fixed;
-    
     height: 300%;
     width: 100%;
     z-index: -1;
     opacity: 0.92;
 }
 
+ 
 #home h1{
     color: black;
     text-align: center;
     font-family: 'Bree Serif', serif;
+    margin-top: 170px;
 }
 
 #home p{
@@ -109,6 +111,12 @@
     font-size: 3.9rem;
     padding: 4px;
 }
+.h-secondary{
+    font-size: 1.9rem;
+    padding: 4px;
+    color: blue;
+    font-family: 'Bree Serif', serif;
+}
 .btn{
     position: relative;
     text-align: center;
@@ -127,31 +135,69 @@
 }
 .btn:hover
 {
-    box-shadow: 0 4px 10px 0 #78d6d3 inset, 0 4px 10px 0 #15f4ee,
-                0 4px 10px 0 #78d6d3 inset, 0 4px 10px 0 #15f4ee;
+    box-shadow: 0 4px 10px 0 #788ed6 inset, 0 4px 10px 0 #5815f4,
+                0 4px 10px 0 #8978d6 inset, 0 4px 10px 0 #1915f4;
 }
+ 
 
-  
-
-body{
-    min-height: 100vh;
-     
-}
-
-#container{
+.container{
     position: relative;
-    color: white;
+    color: rgb(246, 243, 243);
     text-align: center;
-    font-size: 0.96rem;
+    font-size: 0.99rem;
     font-weight: bold;
-    margin-top: 260px;
-    /* background: black; */
+    margin: 460px 0px 0px 0px ;
+    background: rgb(123, 82, 235); 
     padding-bottom: 14px;
 }
 
- 
 
 
+/* About Page  */
+h2{
+    color: rgb(20, 20, 20);
+    font-family: 'Bree Serif', serif;
+     
+}
+
+#bgm1{
+    width: 100%; 
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#container1{
+    position: relative;
+    color: rgb(246, 243, 243);
+    text-align: center;
+    font-size: 0.99rem;
+    font-weight: bold;
+    margin: 280px 0px 0px 0px ;
+    background: rgb(123, 82, 235); 
+    padding-bottom: 14px;
+}
+
+.card {
+    border-radius: 50px;
+    position: relative;
+    padding: 30px;
+    margin: 80px 100px 100px;
+    height: 500px;
+    box-shadow: 0 -4px 10px #dfe2e2 ,0 4px 10px 0 #5815f4;
+  }
+
+/* Contact page */
+#container2{
+    position: relative;
+    color: rgb(246, 243, 243);
+    text-align: center;
+    font-size: 0.99rem;
+    font-weight: bold;
+    margin: 360px 0px 0px 0px ;
+    background: rgb(123, 82, 235); 
+    padding-bottom: 14px;
+}
 
 
 
